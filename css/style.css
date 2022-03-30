@@ -1,0 +1,70 @@
+:root{
+    font-family: Ubuntu, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#input-wrapper{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+#input-wrapper label{
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+#input-wrapper input{
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+#input-wrapper input:focus{
+    border-color: rgb(0, 217, 255);
+}
+
+#output{
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align :center;
+    background-color: green;
+    color: white;
+}
+
+#output #cursor{
+    display: inline-block;
+    width: 20px;
+    height: 2.5rem;
+    vertical-align: text-bottom;
+    background-color: black;
+    animation: blink;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+
+    20%{
+       opacity: 0; 
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
